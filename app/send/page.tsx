@@ -24,7 +24,7 @@ export default function Send() {
 
   useEffect(() => {
     // Replace with your WebSocket server URL
-    ws.current = new WebSocket("ws://192.168.202.235:5000");
+    ws.current = new WebSocket("ws://webrtc-nodeserver.vercel.app");
     peerRef.current = new RTCPeerConnection();
 
     if (peerRef.current && ws.current) {
