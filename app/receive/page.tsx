@@ -33,7 +33,7 @@ export default function Receive() {
   const fileMeta = useRef<fileMetaType | null>(null);
 
   useEffect(() => {
-    ws.current = new WebSocket("wss://webrtc-nodeserver.vercel.app");
+    ws.current = new WebSocket("wss://webrtcnodeserver-production.up.railway.app");
     peerRef.current = new RTCPeerConnection();
 
     peerRef.current.onicecandidate = (e) => {
