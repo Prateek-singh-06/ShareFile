@@ -24,7 +24,7 @@ export default function Send() {
 
   useEffect(() => {
     // Replace with your WebSocket server URL
-    ws.current = new WebSocket("wss://webrtcnodeserver-production.up.railway.app");
+    ws.current = new WebSocket("wss://webrtc-nodeserver.onrender.com");
     peerRef.current = new RTCPeerConnection();
 
     if (peerRef.current && ws.current) {
